@@ -1,0 +1,64 @@
+html {
+    font-size: 16px; /* 设置基础字体大小 */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    font-size: 1rem; /* 使用rem单位进行字体缩放 */
+}
+
+h1 {
+    color: #fff;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 3rem; /* 增大标题字体 */
+}
+
+p {
+    text-align: center;
+    font-size: 1.5rem; /* 增大段落字体 */
+    margin: 0 0 1rem 0; /* 设置底部边距 */
+}
+
+.downloads {
+    display: flex;
+    justify-content: center;
+    gap: 100px; /* 修改这个值以调整图片之间的间隔 */
+    margin-top: 50px; /* 修改这个值以增加图片与 <p> 标签之间的距离 */
+}
+
+.download-item {
+    display: flex; /* 使用Flexbox布局 */
+    flex-direction: column; /* 垂直排列 */
+    align-items: center; /* 居中对齐 */
+    justify-content: flex-end; /* 确保内容在容器底部对齐 */
+    text-align: center;
+    background-color: #333;
+    padding: 1.25rem;
+    border-radius: 5px;
+    width: 15.75rem; /* 固定宽度以确保对齐 */
+    height: 19rem; /* 固定高度以确保对齐 */
+    box-sizing: border-box; /* 确保内边距和边框不会影响宽度 */
+}
+
+.preview {
+    width: 16rem; /* 固定宽度 */
+    height: 16rem; /* 固定高度 */
+    display: block;
+    margin-bottom: 0.625rem; /* 确保图片与下载链接之间有一定的间距 */
+}
+
+a {
+    color: #1E90FF;
+    text-decoration: none;
+    font-size: 1.5rem; /* 增大链接字体 */
+    display: block; /* 确保链接按块显示 */
+}
+
+a:hover {
+    text-decoration: underline;
+}
