@@ -62,3 +62,34 @@ a {
 a:hover {
     text-decoration: underline;
 }
+
+/* 添加媒体查询以适配移动设备 */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem; /* 调整标题字体大小 */
+    }
+
+    p {
+        font-size: 1.2rem; /* 调整段落字体大小 */
+    }
+
+    .downloads {
+        flex-direction: column; /* 垂直排列下载项 */
+        gap: 20px; /* 减少下载项之间的间隔 */
+        margin-top: 20px; /* 调整下载项与 <p> 标签之间的距离 */
+    }
+
+    .download-item {
+        width: 100%; /* 下载项占满容器宽度 */
+        height: auto; /* 自动调整高度 */
+    }
+
+    .preview {
+        width: 100%; /* 图片占满容器宽度 */
+        height: auto; /* 自动调整高度 */
+    }
+
+    a {
+        font-size: 1.2rem; /* 调整链接字体大小 */
+    }
+}
